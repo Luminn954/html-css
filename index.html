@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Lutfi Sakhi Winnardi</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#f8fafc;
+            color:#334155;
+            line-height:1.6;
+        }
+
+        header{
+            position:sticky;
+            top:0;
+            z-index:1000;
+            background:#0f172a;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo{
+            font-size:1.5rem;
+            font-weight:bold;
+            color:#38bdf8;
+            text-decoration:none;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:40px;
+            padding:80px 20px;
+            background:white;
+        }
+
+        .hero-img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #38bdf8;
+            box-shadow:0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .hero-text h1{
+            font-size:2.2rem;
+            color:#0f172a;
+        }
+
+        .hero-text h3{
+            color:#0284c7;
+            margin:10px 0;
+        }
+
+        .hero-text p{
+            max-width:500px;
+            color:#64748b;
+            margin-bottom:20px;
+        }
+
+        .btn-primary{
+            display:inline-block;
+            background:#0284c7;
+            color:white;
+            padding:10px 22px;
+            border-radius:6px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .btn-primary:hover{
+            background:#0369a1;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:50px auto;
+            padding:0 20px;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:30px;
+            font-size:1.8rem;
+            color:#0f172a;
+        }
+
+        .about-card{
+            background:white;
+            padding:30px;
+            border-radius:8px;
+            border-left:5px solid #0284c7;
+            box-shadow:0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .skills-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:20px;
+        }
+
+        .skill-item{
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            text-align:center;
+            border:1px solid #e2e8f0;
+            font-weight:bold;
+        }
+
+        .projects-grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:25px;
+        }
+
+        .project-card{
+            background:white;
+            border-radius:8px;
+            border:1px solid #e2e8f0;
+            padding:25px;
+            position:relative;
+            transition:.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .project-badge{
+            position:absolute;
+            top:15px;
+            right:15px;
+            background:#e0f2fe;
+            color:#0369a1;
+            padding:4px 10px;
+            border-radius:20px;
+            font-size:12px;
+            font-weight:bold;
+        }
+
+        .project-card h3{
+            margin-bottom:10px;
+            color:#0f172a;
+        }
+
+        .project-card p{
+            color:#64748b;
+        }
+
+        footer{
+            background:#0f172a;
+            color:#94a3b8;
+            text-align:center;
+            padding:25px;
+            margin-top:60px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+                gap:10px;
+            }
+
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .skills-grid{
+                grid-template-columns:repeat(2,1fr);
+            }
+
+            .projects-grid{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Lutfi.sw</a>
+
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <img src="c:\Users\lutfi sakhi winardi\Downloads\WhatsApp Image 2026-08-14 at 08.19.03.jpeg" alt="Foto Profil Lutfi" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Halo, Saya Lutfi Sakhi Winnardi</h1>
+            <h3>Siswa Xi PPLG 1 - Web Developer Pemula</h3>
+
+            <p>
+                Saya adalah siswa smk telkom bandung jurusan pplg dan saya 
+                sedang belajar python dan web development. Saya memiliki minat yang besar dalam pengembangan website dan pemrograman
+                serta bersemangat untuk terus belajar dan mengembangkan keterampilan saya di bidang ini.
+            </p>
+
+            <a href="https://instagram.com/lutfi.sw9" target="_blank" class="btn-primary">
+                Hubungi Saya
+            </a>
+        </div>
+
+    </section>
+
+    <section class="container" id="tentang">
+        <h2 class="section-title">Tentang Saya</h2>
+
+        <div class="about-card">
+            <p>
+                Saya merupakan siswa SMK jurusan PPLG yang sedang belajar
+                pengembangan website dan pemrograman. Saya tertarik pada
+                web development, game development, dan teknologi digital.
+                Saat ini saya terus mengembangkan kemampuan dalam HTML,
+                CSS, JavaScript, serta berbagai teknologi lainnya yang
+                mendukung pembuatan aplikasi modern.
+            </p>
+        </div>
+    </section>
+
+    <section class="container" id="keahlian">
+
+        <h2 class="section-title">hobi saya</h2>
+
+        <div class="skills-grid">
+            <div class="skill-item">main dengan teman</div>
+            <div class="skill-item">gym</div>
+            <div class="skill-item">basket</div>
+            <div class="skill-item">Gaming</div>
+            <div class="skill-item">badminton</div>
+            <div class="skill-item">olahraga</div>
+        </div>
+
+    </section>
+
+    <section class="container" id="proyek">
+
+        <h2 class="section-title">Proyek Saya</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <span class="project-badge">Website</span>
+                <h3>Website Portofolio Pribadi</h3>
+                <p>
+                    Membuat website portofolio menggunakan HTML dan CSS
+                    untuk menampilkan profil, keahlian, dan proyek pribadi.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <span class="project-badge">Sekolah</span>
+                <h3>Website Tugas Sekolah</h3>
+                <p>
+                    Mengerjakan berbagai tugas pengembangan website sebagai
+                    sarana belajar desain responsif dan struktur web modern.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <span class="project-badge">Game</span>
+                <h3>Game Sederhana Unity</h3>
+                <p>
+                    Belajar membuat game sederhana menggunakan Unity untuk
+                    memahami logika permainan dan pemrograman dasar.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <span class="project-badge">PPLG</span>
+                <h3>Proyek Pemrograman Dasar</h3>
+                <p>
+                    Mengerjakan berbagai latihan coding dan aplikasi sederhana
+                    selama proses pembelajaran di jurusan PPLG.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html> 
+<section class="container" id="sosial">
+
+    <h2 class="section-title">Sosial Media</h2>
+
+    <div class="skills-grid">
+
+        <a href="https://instagram.com/lutfi.sw9" target="_blank" style="text-decoration:none;color:inherit;">
+            <div class="skill-item">
+                 Instagram
+                <br>
+                @lutfi.sw9
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@kumpay" target="_blank" style="text-decoration:none;color:inherit;">
+            <div class="skill-item">
+                 TikTok
+                <br>
+                @cyrosss7
+            </div>
+        </a>
+
+        <a href="https://wa.me/628814071108" target="_blank" style="text-decoration:none;color:inherit;">
+            <div class="skill-item">
+                 WhatsApp
+                <br>
+                08814071108
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        &copy; 2026 Lutfi Sakhi Winnardi - Portofolio Siswa PPLG
+    </p>
+
+    <p style="margin-top:10px;">
+        Instagram : @lutfi.sw9 |
+        TikTok : @cyrosss7 |
+        WhatsApp : 08814071108
+    </p>
+</footer>
