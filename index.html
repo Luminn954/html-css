@@ -3,371 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Lutfi Sakhi Winnardi</title>
+    <meta name="description" content="Portofolio Lutfi Sakhi Winnardi, siswa PPLG yang sedang belajar web development dan pemrograman.">
+    <title>Lutfi Sakhi — Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        html{
-            scroll-behavior:smooth;
-        }
-
-        body{
-            background:#f8fafc;
-            color:#334155;
-            line-height:1.6;
-        }
-
-        header{
-            position:sticky;
-            top:0;
-            z-index:1000;
-            background:#0f172a;
-            padding:15px 40px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            box-shadow:0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .logo{
-            font-size:1.5rem;
-            font-weight:bold;
-            color:#38bdf8;
-            text-decoration:none;
-        }
-
-        nav ul{
-            display:flex;
-            list-style:none;
-            gap:20px;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            transition:.3s;
-        }
-
-        nav a:hover{
-            color:#38bdf8;
-        }
-
-        .hero{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            gap:40px;
-            padding:80px 20px;
-            background:white;
-        }
-
-        .hero-img{
-            width:180px;
-            height:180px;
-            border-radius:50%;
-            object-fit:cover;
-            border:4px solid #38bdf8;
-            box-shadow:0 10px 15px rgba(0,0,0,0.1);
-        }
-
-        .hero-text h1{
-            font-size:2.2rem;
-            color:#0f172a;
-        }
-
-        .hero-text h3{
-            color:#0284c7;
-            margin:10px 0;
-        }
-
-        .hero-text p{
-            max-width:500px;
-            color:#64748b;
-            margin-bottom:20px;
-        }
-
-        .btn-primary{
-            display:inline-block;
-            background:#0284c7;
-            color:white;
-            padding:10px 22px;
-            border-radius:6px;
-            text-decoration:none;
-            font-weight:bold;
-        }
-
-        .btn-primary:hover{
-            background:#0369a1;
-        }
-
-        .container{
-            max-width:1000px;
-            margin:50px auto;
-            padding:0 20px;
-        }
-
-        .section-title{
-            text-align:center;
-            margin-bottom:30px;
-            font-size:1.8rem;
-            color:#0f172a;
-        }
-
-        .about-card{
-            background:white;
-            padding:30px;
-            border-radius:8px;
-            border-left:5px solid #0284c7;
-            box-shadow:0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .skills-grid{
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:20px;
-        }
-
-        .skill-item{
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            text-align:center;
-            border:1px solid #e2e8f0;
-            font-weight:bold;
-        }
-
-        .projects-grid{
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:25px;
-        }
-
-        .project-card{
-            background:white;
-            border-radius:8px;
-            border:1px solid #e2e8f0;
-            padding:25px;
-            position:relative;
-            transition:.3s;
-        }
-
-        .project-card:hover{
-            transform:translateY(-5px);
-        }
-
-        .project-badge{
-            position:absolute;
-            top:15px;
-            right:15px;
-            background:#e0f2fe;
-            color:#0369a1;
-            padding:4px 10px;
-            border-radius:20px;
-            font-size:12px;
-            font-weight:bold;
-        }
-
-        .project-card h3{
-            margin-bottom:10px;
-            color:#0f172a;
-        }
-
-        .project-card p{
-            color:#64748b;
-        }
-
-        footer{
-            background:#0f172a;
-            color:#94a3b8;
-            text-align:center;
-            padding:25px;
-            margin-top:60px;
-        }
-
-        @media(max-width:768px){
-
-            header{
-                flex-direction:column;
-                gap:10px;
-            }
-
-            .hero{
-                flex-direction:column;
-                text-align:center;
-            }
-
-            .skills-grid{
-                grid-template-columns:repeat(2,1fr);
-            }
-
-            .projects-grid{
-                grid-template-columns:1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="site-header" id="top">
+        <div class="container navbar">
+            <a class="logo" href="#top" aria-label="Kembali ke beranda">
+                <span class="logo-mark">L</span>
+                Lutfi.sw
+            </a>
 
-    <header>
-        <a href="#" class="logo">Lutfi.sw</a>
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#keahlian">Keahlian</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#keahlian">Keahlian</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-            </ul>
-        </nav>
+            <div class="nav-actions">
+</div>
+        </div>
     </header>
 
-    <section class="hero">
-
-        <img src="c:\Users\lutfi sakhi winardi\Downloads\WhatsApp Image 2026-08-14 at 08.19.03.jpeg" alt="Foto Profil Lutfi" class="hero-img">
-
-        <div class="hero-text">
-            <h1>Halo, Saya Lutfi Sakhi Winnardi</h1>
-            <h3>Siswa Xi PPLG 1 - Web Developer Pemula</h3>
-
-            <p>
-                Saya adalah siswa smk telkom bandung jurusan pplg dan saya 
-                sedang belajar python dan web development. Saya memiliki minat yang besar dalam pengembangan website dan pemrograman
-                serta bersemangat untuk terus belajar dan mengembangkan keterampilan saya di bidang ini.
-            </p>
-
-            <a href="https://instagram.com/lutfi.sw9" target="_blank" class="btn-primary">
-                Hubungi Saya
-            </a>
-        </div>
-
-    </section>
-
-    <section class="container" id="tentang">
-        <h2 class="section-title">Tentang Saya</h2>
-
-        <div class="about-card">
-            <p>
-                Saya merupakan siswa SMK jurusan PPLG yang sedang belajar
-                pengembangan website dan pemrograman. Saya tertarik pada
-                web development, game development, dan teknologi digital.
-                Saat ini saya terus mengembangkan kemampuan dalam HTML,
-                CSS, JavaScript, serta berbagai teknologi lainnya yang
-                mendukung pembuatan aplikasi modern.
-            </p>
-        </div>
-    </section>
-
-    <section class="container" id="keahlian">
-
-        <h2 class="section-title">hobi saya</h2>
-
-        <div class="skills-grid">
-            <div class="skill-item">main dengan teman</div>
-            <div class="skill-item">gym</div>
-            <div class="skill-item">basket</div>
-            <div class="skill-item">Gaming</div>
-            <div class="skill-item">badminton</div>
-            <div class="skill-item">olahraga</div>
-        </div>
-
-    </section>
-
-    <section class="container" id="proyek">
-
-        <h2 class="section-title">Proyek Saya</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <span class="project-badge">Website</span>
-                <h3>Website Portofolio Pribadi</h3>
-                <p>
-                    Membuat website portofolio menggunakan HTML dan CSS
-                    untuk menampilkan profil, keahlian, dan proyek pribadi.
+    <main>
+        <section class="container hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Siswa PPLG · Web Developer Pemula</p>
+                <h1 id="hero-title">Halo, saya <span>Lutfi.</span></h1>
+                <p class="hero-description">
+                    Saya siswa SMK Telkom Bandung yang sedang membangun skill di bidang web development, Python, dan teknologi digital.
+                    Yuk lihat beberapa hal yang sedang saya pelajari.
                 </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyek">Lihat proyek <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://wa.me/628814071108?text=Halo%20Lutfi%2C%20aku%20mau%20ngobrol." target="_blank" rel="noopener noreferrer">Hubungi saya</a>
+                </div>
+
+                <div class="scroll-note" aria-hidden="true">
+                    <span class="scroll-line"></span>
+                    Scroll untuk kenal lebih jauh
+                </div>
             </div>
 
-            <div class="project-card">
-                <span class="project-badge">Sekolah</span>
-                <h3>Website Tugas Sekolah</h3>
-                <p>
-                    Mengerjakan berbagai tugas pengembangan website sebagai
-                    sarana belajar desain responsif dan struktur web modern.
-                </p>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <img src="assets/profile.jpeg" alt="Foto profil Lutfi Sakhi Winnardi">
+                    <div class="profile-card-info">
+                        <div>
+                            <strong>Lutfi Sakhi</strong>
+                            <small>Bandung, Indonesia</small>
+                        </div>
+                        <span class="available">Learning</span>
+                    </div>
+                </div>
+
+                <div class="floating-card study-card">
+                    <span class="floating-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Always curious</strong>
+                        <small>Terus belajar hal baru</small>
+                    </div>
+                </div>
+
+                <div class="floating-card code-card">
+                    <span class="floating-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <div>
+                        <strong>HTML · CSS · JS</strong>
+                        <small>Tools yang sedang dipelajari</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section" id="tentang" aria-labelledby="about-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">01 — Tentang saya</p>
+                    <h2 id="about-title">Sedikit cerita<br>tentang saya.</h2>
+                </div>
+                <p>Belajar pelan-pelan, bikin proyek, lalu berkembang dari setiap prosesnya.</p>
             </div>
 
-            <div class="project-card">
-                <span class="project-badge">Game</span>
-                <h3>Game Sederhana Unity</h3>
-                <p>
-                    Belajar membuat game sederhana menggunakan Unity untuk
-                    memahami logika permainan dan pemrograman dasar.
-                </p>
+            <div class="about-grid">
+                <article class="about-card">
+                    <p>
+                        Saya adalah siswa SMK Telkom Bandung jurusan <em>PPLG</em> yang punya minat besar pada pemrograman dan pembuatan website.
+                        Buat saya, coding bukan cuma menulis baris kode, tapi juga cara untuk mengubah ide menjadi sesuatu yang bisa digunakan.
+                    </p>
+                    <p>
+                        Saat ini saya fokus memahami HTML, CSS, JavaScript, dan Python. Saya juga tertarik mengeksplorasi game development serta berbagai teknologi digital lainnya.
+                    </p>
+                </article>
+
+                <div class="mini-grid">
+                    <article class="mini-card">
+                        <span class="mini-icon" aria-hidden="true">⌘</span>
+                        <h3>Problem solving</h3>
+                        <p>Suka mencari cara sederhana untuk menyelesaikan masalah.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-icon" aria-hidden="true">◒</span>
+                        <h3>Creative learner</h3>
+                        <p>Senang mencoba ide baru lewat proyek kecil.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-icon" aria-hidden="true">↗</span>
+                        <h3>Goal oriented</h3>
+                        <p>Berusaha konsisten meningkatkan kemampuan.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-icon" aria-hidden="true">♡</span>
+                        <h3>Team player</h3>
+                        <p>Terbuka untuk belajar dan bekerja bersama.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section" id="keahlian" aria-labelledby="skill-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">02 — Yang saya suka</p>
+                    <h2 id="skill-title">Belajar lewat<br>hal yang saya suka.</h2>
+                </div>
+                <p>Beberapa aktivitas dan skill yang membuat saya tetap aktif, kreatif, dan penasaran.</p>
             </div>
 
-            <div class="project-card">
-                <span class="project-badge">PPLG</span>
-                <h3>Proyek Pemrograman Dasar</h3>
-                <p>
-                    Mengerjakan berbagai latihan coding dan aplikasi sederhana
-                    selama proses pembelajaran di jurusan PPLG.
-                </p>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">💻</span>
+                    <div><h3>Web development</h3><p>Membuat halaman web</p></div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">🐍</span>
+                    <div><h3>Python</h3><p>Belajar logika coding</p></div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">🎮</span>
+                    <div><h3>Gaming</h3><p>Eksplorasi dunia game</p></div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">🏋️</span>
+                    <div><h3>Gym</h3><p>Menjaga badan tetap fit</p></div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">🏀</span>
+                    <div><h3>Basket</h3><p>Olahraga dan teamwork</p></div>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">🏸</span>
+                    <div><h3>Badminton</h3><p>Aktif dan menyenangkan</p></div>
+                </article>
             </div>
+        </section>
 
+        <section class="container section" id="proyek" aria-labelledby="project-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">03 — Proyek saya</p>
+                    <h2 id="project-title">Yang pernah<br>saya kerjakan.</h2>
+                </div>
+                <p>Proyek kecil adalah tempat terbaik untuk mempraktikkan apa yang sudah dipelajari.</p>
+            </div>
+<div class="projects-grid">
+                <article class="project-card" data-category="website">
+                    <div>
+                        <div class="project-top"><span class="project-number">01</span><span class="project-badge">Website</span></div>
+                        <h3>Website Portofolio Pribadi</h3>
+                        <p>Website untuk menampilkan profil, minat, dan proyek dengan tampilan yang responsif.</p>
+                    </div>
+                    <a class="project-link" href="#top">Lihat detail <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="project-card" data-category="school">
+                    <div>
+                        <div class="project-top"><span class="project-number">02</span><span class="project-badge">Sekolah</span></div>
+                        <h3>Website Tugas Sekolah</h3>
+                        <p>Latihan membuat layout web, memahami struktur HTML, dan menerapkan desain responsif.</p>
+                    </div>
+                    <a class="project-link" href="#top">Lihat detail <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="project-card" data-category="game">
+                    <div>
+                        <div class="project-top"><span class="project-number">03</span><span class="project-badge">Game</span></div>
+                        <h3>Game Sederhana Unity</h3>
+                        <p>Eksplorasi awal game development untuk memahami logika permainan dan pemrograman dasar.</p>
+                    </div>
+                    <a class="project-link" href="#top">Lihat detail <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="project-card" data-category="school">
+                    <div>
+                        <div class="project-top"><span class="project-number">04</span><span class="project-badge">PPLG</span></div>
+                        <h3>Latihan Pemrograman Dasar</h3>
+                        <p>Kumpulan latihan coding dan aplikasi sederhana untuk menguatkan logika pemrograman.</p>
+                    </div>
+                    <a class="project-link" href="#top">Lihat detail <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="kontak" aria-labelledby="contact-title">
+            <div class="contact-card">
+                <div>
+                    <p class="section-kicker">04 — Mari terhubung</p>
+                    <h2 id="contact-title">Punya ide atau<br>mau ngobrol?</h2>
+                    <p>Jangan ragu untuk menyapa. Saya terbuka untuk ngobrol soal coding, proyek, atau hal-hal menarik lainnya.</p>
+                    <div class="social-links">
+                        <a class="social-link" href="https://instagram.com/lutfi.sw9" target="_blank" rel="noopener noreferrer">◎ Instagram</a>
+                        <a class="social-link" href="https://www.tiktok.com/@kumpay" target="_blank" rel="noopener noreferrer">♪ TikTok</a>
+                        <a class="social-link" href="https://wa.me/628814071108" target="_blank" rel="noopener noreferrer">◌ WhatsApp</a>
+                    </div>
+                </div>
+                <div class="contact-decoration" aria-hidden="true">✉</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="currentYear">2026</span> Lutfi Sakhi Winnardi</p>
+            <p>Dibuat dengan rasa ingin tahu dan banyak latihan.</p>
         </div>
-
-    </section>
-
+    </footer>
 </body>
-</html> 
-<section class="container" id="sosial">
-
-    <h2 class="section-title">Sosial Media</h2>
-
-    <div class="skills-grid">
-
-        <a href="https://instagram.com/lutfi.sw9" target="_blank" style="text-decoration:none;color:inherit;">
-            <div class="skill-item">
-                 Instagram
-                <br>
-                @lutfi.sw9
-            </div>
-        </a>
-
-        <a href="https://www.tiktok.com/@kumpay" target="_blank" style="text-decoration:none;color:inherit;">
-            <div class="skill-item">
-                 TikTok
-                <br>
-                @cyrosss7
-            </div>
-        </a>
-
-        <a href="https://wa.me/628814071108" target="_blank" style="text-decoration:none;color:inherit;">
-            <div class="skill-item">
-                 WhatsApp
-                <br>
-                08814071108
-            </div>
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>
-        &copy; 2026 Lutfi Sakhi Winnardi - Portofolio Siswa PPLG
-    </p>
-
-    <p style="margin-top:10px;">
-        Instagram : @lutfi.sw9 |
-        TikTok : @cyrosss7 |
-        WhatsApp : 08814071108
-    </p>
-</footer>
+</html>
